@@ -47,3 +47,7 @@ Cria um objeto pessoa, que será alocada na lista de pessoas no Zoologico.
 Dados das pessoas serão alocados nesta classe.
 - Dados: Lista de Pessoas. (Clientes)
 - Métodos: `adicionarPessoa(Pessoa pessoa)`, `adicionarListaDePessoas(ArrayList<Pessoa> lista)` -> Em caso de uma lista já existente, a utiliza, `printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
+
+# TODO: 
+Gráfico de Fluxo.
+Teste unitário (JUNIT).
