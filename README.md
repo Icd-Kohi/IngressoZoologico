@@ -13,11 +13,11 @@
 (máximo 5 por pessoa)
 
 - Determinar o preço do bilhete com base na idade:
- - Crianças ( até 12 anos ) pagam um preço reduzido ( preço com desconto : R$10 ).
+ - Crianças (até 12 anos) pagam um preço reduzido (Preço com desconto: R$10).
 
- - Adultos ( 13 a 59 anos ) pagam o preço completo ( Inteira: R$30 ).
+ - Adultos (13 a 59 anos) pagam o preço completo (Inteira: R$30).
 
- - Idosos ( 60 anos ou mais ) pagam um preço com desconto ( meia R$15 ).
+ - Idosos (60 anos ou mais) pagam um preço com desconto (Meia: R$15).
 
 - Se a quantidade de bilhetes for aceitável, calcular o preço total.
 
@@ -40,14 +40,24 @@ Após a inicialização do programa, a interface gráfica é chamada e solicita 
 
 ###### Pessoa.java
 Cria um objeto pessoa, que será alocada na lista de pessoas no Zoologico.
-- Dados: nome,idade,ingresso.
-- Métodos: `getNome()`, `getIdade()`, `getIngresso()`, `checaPreco()` -> Checa o valor a pagar para cada ingresso, `comprarIngresso(int quantidade)` -> Compra a quantidade desejada de ingressos, `custoPessoa()` -> Valor total a pagar da pessoa.
+- Dados: 
+`String nome`,
+`int idade, ingresso`
+- Métodos: 
+`checaPreco()` -> Checa o valor a pagar para cada ingressos,
+`comprarIngresso(int quantidade)` -> Compra a quantidade desejada de ingressos,
+`custoPessoa()` -> Valor total a pagar da pessoa.
 
 ###### Zoologico.java
 Dados das pessoas serão alocados nesta classe.
-- Dados: Lista de Pessoas. (Clientes)
-- Métodos: `adicionarPessoa(Pessoa pessoa)`, `adicionarListaDePessoas(ArrayList<Pessoa> lista)` -> Em caso de uma lista já existente, a utiliza, `printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
+- Dados: 
+`ArrayList<Pessoa> listaDePessoas` -> Lista de Pessoas. (Clientes)
+- Métodos: 
+`adicionarPessoa(Pessoa pessoa)` -> adiciona um objeto Pessoa na lista, 
+`adicionarListaDePessoas(ArrayList<Pessoa> lista)` -> Em caso de uma lista já existente, a utiliza,
+`printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
 
 # TODO: 
 Gráfico de Fluxo.
+
 Teste unitário (JUNIT).
