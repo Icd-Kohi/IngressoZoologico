@@ -1,5 +1,11 @@
 # TUI - Sistema de compra de ingresso de Zoologico
 @Author: Luan Silva Aguiar. 202123311511.
+<br> 
+Universidade Estadual do Rio de Janeiro DepComp - C.C 2025/2
+<br>
+Disciplina: Teste de Software - Prof: Fabio 
+
+
 ----
 #### Objetivo: Compra e checagem de ingressos de Pessoas num Zoologico. 
 
