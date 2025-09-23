@@ -29,7 +29,6 @@ public class IngressoZoologico {
         interfaceDoPrograma();
     }
     public static void interfaceDoPrograma(){
-        //ArrayList<Pessoa> listaDePessoas = new ArrayList<>();
         Zoologico zoologico = new Zoologico();
 
         Scanner scanner = new Scanner(System.in);
@@ -53,21 +52,38 @@ public class IngressoZoologico {
             switch (input) {
                 case "c" -> {
                     System.out.println("Digite a idade: ");
-                    int idade = Integer.parseInt(scanner.nextLine());
+                    String idadeString = scanner.nextLine();
+                    if(idadeString.isEmpty()){
+                        System.out.println("Somente numeros para a idade\nSaindo deste menu");
+                        continue;
+                    }
+                    int idade = Integer.parseInt(idadeString);
 
                     System.out.println("Digite a quantidade de ingressos: ");
-                    int qtd = Integer.parseInt(scanner.nextLine());
+                    String ingressosString = scanner.nextLine();
+                    if(ingressosString.isEmpty()){
+                        System.out.println("Somente numeros para a quantidade de Ingressos\nSaindo deste menu");
+                        continue;
+                    }
+                    int qtd = Integer.parseInt(ingressosString);
 
-                    simulaPreco(idade, qtd); 
+                    simulaPreco(idade, qtd);
                 }
                 case "p" -> {
                     System.out.println("Digite o nome da pessoa: ");
 
                     String nome = scanner.nextLine();
-
+                    if(nome.isEmpty()){
+                        System.out.println("Nome precisa ser preenchido!\nSaindo deste menu");
+                        continue;
+                    }
                     System.out.println("Digite a idade da pessoa: ");
-
-                    int idade = Integer.parseInt(scanner.nextLine());
+                    String stringIdade = scanner.nextLine();
+                    if (stringIdade.isEmpty()) {
+                        System.out.println("Somente numeros para a idade\nSaindo deste menu");
+                        continue;
+                    }
+                    int idade = Integer.parseInt(stringIdade);
 
                     if (idade < 0) {
                         idade = 0;
@@ -97,15 +113,24 @@ public class IngressoZoologico {
                         for (Pessoa pessoa : zoologico.getListaDePessoas()) {
                             if (pessoa.getNome().equals(nome)) {
                                 System.out.println(pessoa + " Encontrado(a)!");
-                                if(pessoa.getIngresso() > 5){
+                                if(pessoa.getIngresso() >= 5){
                                     System.out.println(pessoa.getNome() + " já possui a quantidade máxima de 5 ingressos.");
                                     continue;
                                 }
+
                                 System.out.println("Deseja comprar ingresso para " + pessoa.getNome() + " ? (s/n)");
                                 if (scanner.nextLine().equals("s")) {
                                     System.out.println("Quantos ingressos deseja comprar? (Max de 5 por pessoa)");
-                                    int quantia = Integer.parseInt(scanner.nextLine());
+                                    String numberInput = scanner.nextLine();
+                                    if(numberInput.isEmpty()){
+                                        System.out.println("Digite apenas números\nSaindo deste menu");
+                                        continue;
+                                    }
+                                    int quantia = Integer.parseInt(numberInput);
                                     comprarIngresso(pessoa, quantia);
+                                }else if(scanner.nextLine().isEmpty()){
+                                    System.out.println("Nada confirmado\nSaindo deste menu");
+                                    continue;
                                 }
 
                                 System.out.println(" Obrigado!");

@@ -57,7 +57,7 @@ Dados das pessoas serão alocados nesta classe.
 `adicionarListaDePessoas(ArrayList<Pessoa> lista)` -> Em caso de uma lista já existente, a utiliza,
 `printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
 -----
-#### Testes Unitários:
+# Testes Unitários:
 Testes unitários em cada classe do sistema.
 1. `IngressoZoologicoTest`:
 
@@ -78,7 +78,7 @@ Testes unitários em cada classe do sistema.
 - `toString` com pessoas concatena o `toString`de cada pessoa.
 - `toString` vazio gera string vazia.
 
-3. `PessoaTest`
+3. `PessoaTest`:
 
 - Construtores
 - Métodos de preços (`precoInteiro`, `precoReduzido`, `precoMeia`)
@@ -87,6 +87,15 @@ Testes unitários em cada classe do sistema.
 - `custoPessoa` para criança, adulto e idoso.
 - Variações para checagem do método `toString`.
 
-# TODO: 
-Gráfico de Fluxo.
+--------
+
+# Diagrama de Fluxo de controle: 
+
+Fórmula da *complexidade ciclomática*:
+V(G) = E - N + 2  
+onde: 
+E => Número de Arestas.
+N => Número de Nós.
++2 => Ajuste constante que garante que o valor reflita o número de regiões independentes do grafo.
+
 
