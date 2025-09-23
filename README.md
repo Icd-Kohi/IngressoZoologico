@@ -1,9 +1,11 @@
 # TUI - Sistema de compra de ingresso de Zoologico
+
 @Author: Luan Silva Aguiar. 202123311511.
+
 <br> 
-Universidade Estadual do Rio de Janeiro DepComp - C.C 2025/2
-<br>
-Disciplina: Teste de Software - Prof: Fabio 
+Universidade do Estado do Rio de Janeiro. Centro de Tecnologia e Ciências<br>
+Disciplina: Teste de Software - Prof: Fabio - C.C 2025/2
+
 
 
 ----
