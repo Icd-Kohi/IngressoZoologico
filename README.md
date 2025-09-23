@@ -56,8 +56,37 @@ Dados das pessoas serão alocados nesta classe.
 `adicionarPessoa(Pessoa pessoa)` -> adiciona um objeto Pessoa na lista, 
 `adicionarListaDePessoas(ArrayList<Pessoa> lista)` -> Em caso de uma lista já existente, a utiliza,
 `printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
+-----
+#### Testes Unitários:
+Testes unitários em cada classe do sistema.
+1. `IngressoZoologicoTest`:
+
+- Todas as faixas etárias.
+- Quantidade negativa ajustada para zero.
+- Quantidade de ingresso > 5, ajustada para 5.
+- Idade negativa ajustada para zero.
+
+2. `ZoologicoTest`:
+
+- Adiciona pessoa.
+- Se adiciona `null`, não adiciona nada.
+- Adidiona uma lista de Pessoas.
+- Tenta adicionar uma lista `null`.
+- `printPessoa` com pessoas, retorna o index e nomes.
+- `printPessoa` vazio retorna -> [].
+- `buscarPessoa` imprime pessoa certa no System.out.
+- `toString` com pessoas concatena o `toString`de cada pessoa.
+- `toString` vazio gera string vazia.
+
+3. `PessoaTest`
+
+- Construtores
+- Métodos de preços (`precoInteiro`, `precoReduzido`, `precoMeia`)
+- Checagem de saída para cada faixa etária.
+- `comprarIngresso` dentro do limite, acima e acumulado.
+- `custoPessoa` para criança, adulto e idoso.
+- Variações para checagem do método `toString`.
 
 # TODO: 
 Gráfico de Fluxo.
 
-Teste unitário (JUNIT).

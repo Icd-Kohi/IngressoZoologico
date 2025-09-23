@@ -7,6 +7,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
+// TESTES Classe Pessoa
+// Construtores.
+// Métodos de preços (`precoInteiro`, `precoReduzido`, `precoMeia`).
+// Checagem de saída para cada faixa etária.
+// `comprarIngresso` dentro do limite, acima e acumulado.
+// `custoPessoa` para criança, adulto e idoso.
+// Variações para checagem do método `toString`.
 
 public class PessoaTest {
 
