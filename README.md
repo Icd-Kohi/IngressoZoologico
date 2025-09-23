@@ -97,5 +97,16 @@ onde:
 E => Número de Arestas.
 N => Número de Nós.
 +2 => Ajuste constante que garante que o valor reflita o número de regiões independentes do grafo.
+#### Diagrama:
 
+![Diagrama de Fluxo de Controle: LUAN SILVA AGUIAR.](/DiagramaDeFluxo-LuanSilvaAguiar.png "Autor: LUAN SILVA AGUIAR")
+
+Neste sistema, destaco as seguintes informações:
+17 nós.
+28 arestas. 
++2.
+<br>
+Montando a fórmula: V(G) = 28 - 17 + 2 => **13**
+<br>
+A complexidade ciclomática deste sistema é de 13 possibilidades.
 

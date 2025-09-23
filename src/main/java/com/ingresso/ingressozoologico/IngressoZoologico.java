@@ -44,11 +44,6 @@ public class IngressoZoologico {
                 continue;
             }
 
-            System.out.println("Pressione c para checar e simular a precificacao");
-            System.out.println("Pressione p para cadastrar uma pessoa");
-            System.out.println("Pressione v para ver pessoas cadastradas");
-            System.out.println("Pressione s selecionar uma pessoa");
-
             switch (input) {
                 case "c" -> {
                     System.out.println("Digite a idade: ");
@@ -139,6 +134,10 @@ public class IngressoZoologico {
                     }
                 }
             }
+            System.out.println("Pressione c para checar e simular a precificacao");
+            System.out.println("Pressione p para cadastrar uma pessoa");
+            System.out.println("Pressione v para ver pessoas cadastradas");
+            System.out.println("Pressione s selecionar uma pessoa");
         }
     }
 
