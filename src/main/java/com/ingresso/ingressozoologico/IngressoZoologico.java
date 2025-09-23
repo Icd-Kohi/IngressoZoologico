@@ -96,10 +96,16 @@ public class IngressoZoologico {
 
                         for (Pessoa pessoa : zoologico.getListaDePessoas()) {
                             if (pessoa.getNome().equals(nome)) {
-                                System.out.println(pessoa + " Encontrado!");
+                                System.out.println(pessoa + " Encontrado(a)!");
+                                if(pessoa.getIngresso() > 5){
+                                    System.out.println(pessoa.getNome() + " já possui a quantidade máxima de 5 ingressos.");
+                                    continue;
+                                }
                                 System.out.println("Deseja comprar ingresso para " + pessoa.getNome() + " ? (s/n)");
                                 if (scanner.nextLine().equals("s")) {
-                                    comprarIngresso(pessoa);
+                                    System.out.println("Quantos ingressos deseja comprar? (Max de 5 por pessoa)");
+                                    int quantia = Integer.parseInt(scanner.nextLine());
+                                    comprarIngresso(pessoa, quantia);
                                 }
 
                                 System.out.println(" Obrigado!");
@@ -111,21 +117,13 @@ public class IngressoZoologico {
         }
     }
 
-    public static void comprarIngresso(Pessoa pessoa){
-        Scanner scanner = new Scanner(System.in);
+    public static void comprarIngresso(Pessoa pessoa, int qtdIngresso){
+        if(qtdIngresso + pessoa.getIngresso() > 5) {
+            System.out.println("Essa quantidade ultrapassa o limite permitido!");
+        }else{
+            pessoa.comprarIngresso(qtdIngresso);
 
-        if(pessoa.getIngresso() < 5){
-            System.out.println("Quantos ingressos deseja comprar?");
-
-            int qtdCompra = Integer.parseInt(scanner.nextLine());
-
-            if(qtdCompra + pessoa.getIngresso() > 5) {
-                System.out.println("Essa quantidade ultrapassa o limite permitido!");
-            }else{
-                pessoa.comprarIngresso(qtdCompra);
-
-                System.out.println("Compra de " + qtdCompra + " Ingressos para " + pessoa.getNome() + " efetuada com sucesso!");
-            }
+            System.out.println("Compra de " + qtdIngresso + " Ingressos para " + pessoa.getNome() + " efetuada com sucesso!");
         }
     }
     public static void simulaPreco(int idade, int qtd){
