@@ -66,7 +66,7 @@ Dados das pessoas serão alocados nesta classe.
 `printPessoa()` -> retorna uma String de todas as pessoas no Zoologico.
 -----
 # Testes Unitários:
-Testes unitários em cada classe do sistema.
+Testes unitários em cada classe do sistema com JUnit5.
 1. `IngressoZoologicoTest`:
 
 - Todas as faixas etárias.
@@ -117,4 +117,5 @@ Neste sistema, destaco as seguintes informações:
 Montando a fórmula: V(G) = 28 - 17 + 2 => **13**
 <br>
 A complexidade ciclomática deste sistema é de 13 possibilidades.
+
 
