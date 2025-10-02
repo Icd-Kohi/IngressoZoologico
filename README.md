@@ -67,14 +67,14 @@ Dados das pessoas serão alocados nesta classe.
 -----
 # Testes Unitários:
 Testes unitários em cada classe do sistema com JUnit5.
-1. `IngressoZoologicoTest`:
+1. `IngressoZoologicoTest.java`:
 
 - Todas as faixas etárias.
 - Quantidade negativa ajustada para zero.
 - Quantidade de ingresso > 5, ajustada para 5.
 - Idade negativa ajustada para zero.
 
-2. `ZoologicoTest`:
+2. `ZoologicoTest.java`:
 
 - Adiciona pessoa.
 - Se adiciona `null`, não adiciona nada.
@@ -86,7 +86,7 @@ Testes unitários em cada classe do sistema com JUnit5.
 - `toString` com pessoas concatena o `toString`de cada pessoa.
 - `toString` vazio gera string vazia.
 
-3. `PessoaTest`:
+3. `PessoaTest.java`:
 
 - Construtores
 - Métodos de preços (`precoInteiro`, `precoReduzido`, `precoMeia`)
@@ -94,6 +94,20 @@ Testes unitários em cada classe do sistema com JUnit5.
 - `comprarIngresso` dentro do limite, acima e acumulado.
 - `custoPessoa` para criança, adulto e idoso.
 - Variações para checagem do método `toString`.
+________
+
+# Teste de Integração: 
+- `IngressoZoologicoTesteIntegracao.java`
+
+Teste cobrindo as classes: `IngressoZoologico.java`, `Pessoa.java`, `Zoologico.java`.
+Localizado no diretório: `/test/java/com.ingresso.ingressozoologico/integration`.
+
+Etapas do teste de integração:
+1. Cadastro de uma `Pessoa`.
+2. Simulação de preço da `Pessoa`.
+3. Compra de ingressos. 
+4. Tentativa de ultrapassar o limite de ingressos permitido (5).
+5. Checagem final, onde vemos se a `Pessoa` ainda tem os mesmos ingressos já comprados.
 
 --------
 
