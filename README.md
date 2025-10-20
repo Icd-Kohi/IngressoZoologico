@@ -111,6 +111,11 @@ Etapas do teste de integração:
 
 --------
 
+# Integração contínua com Github Actions.
+Configurações do github actions no arquivo `maven.yml` no caminho: `.github/workflows/maven.yml`
+
+--------
+
 # Diagrama de Fluxo de controle: 
 
 Fórmula da *complexidade ciclomática*:
@@ -131,5 +136,6 @@ Neste sistema, destaco as seguintes informações:
 Montando a fórmula: V(G) = 28 - 17 + 2 => **13**
 <br>
 A complexidade ciclomática deste sistema é de 13 possibilidades.
+
 
 
