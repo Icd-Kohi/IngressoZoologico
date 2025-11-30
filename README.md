@@ -1,7 +1,5 @@
 # TUI - Sistema de compra de ingresso de Zoologico
 
-@Author: Luan Silva Aguiar. 202123311511.
-
 <br> 
 Universidade do Estado do Rio de Janeiro. Centro de Tecnologia e Ciências<br>
 Disciplina: Teste de Software - Prof: Fabio - C.C 2025/2
@@ -136,6 +134,7 @@ Neste sistema, destaco as seguintes informações:
 Montando a fórmula: V(G) = 28 - 17 + 2 => **13**
 <br>
 A complexidade ciclomática deste sistema é de 13 possibilidades.
+
 
 
 
